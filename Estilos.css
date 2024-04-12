@@ -6,6 +6,10 @@
         padding: 0;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     body {
         background-color: #FCF6F8;
         margin: 0;
@@ -19,22 +23,24 @@
 
     main {
     font-family: "Poppins", sans-serif;
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
+
 
 header nav ul {
     font-family: "Poppins", sans-serif;
-    justify-content: center;
+    justify-content:space-evenly;
     list-style-type: none;
     display: flex;
-    flex-direction: column;
 }
 
 header nav ul li {
-    margin-bottom: 1%; 
+    margin-bottom: 3%; 
 }
 
 header nav ul li a {
@@ -49,7 +55,89 @@ header nav ul li a:hover {
     background-color: #FDE4D6; 
 }
 
+
 .ItensIndex {
-    display: flex;
-    flex-direction: row;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.ItensIndex > div {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+section {
+    width: calc(30% - 40px); 
+    margin: 2%; 
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+section a {
+    display: block; 
+}
+
+.collapsible-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hover-header {
+    padding: 10px;
+    background-color: #FDE4D6;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none; /* Evitar duplicidade de borda */
+    background-color: #fff;
+}
+
+.hover-header:hover + .collapsible-content {
+    display: block;
+}
+
+.box-container {
+    display: flex;              /* Alinha as caixas horizontalmente */
+    justify-content: space-around; /* Distribui espaço uniformemente */
+}
+
+.box {
+    width: 30%; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 40px;
+    background-color: #EAC8AF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;          
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;     
+    text-align: center;
+}
+
+img.contatos {
+    width: 100px;  
+    height: auto;  
+}
+
+.box span {
+    display: block;            
+    margin-top: 10px;          
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+footer {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    text-decoration: none;
 }
